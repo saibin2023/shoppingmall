@@ -54,17 +54,19 @@ class User {
     void updateProfile(String email, String address) { ... }
 }
 
+### **Product 类**
 
-Product 类
-字段： 
-String productId 
-String name 
-String description 
-double price 
-String category 
-方法： 
-List getAllProducts() 
-Product getProductDetails(String productId) 
+#### **字段**
+- `String productId`
+- `String name`
+- `String description`
+- `double price`
+- `String category`
+
+#### **方法**
+- `List<Product> getAllProducts()`
+- `Product getProductDetails(String productId)`
+
 
 根据现有的项目结构，连接到数据库和API的步骤：
 

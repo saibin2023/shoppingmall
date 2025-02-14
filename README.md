@@ -21,7 +21,7 @@ shoppingmall
 为了从0开始编写一个购物软件并上线运行测试，使用Java编写代码，你需要考虑以下画面和功能设计，具体到类、字段和方法：
 
 主功能
-用户认证（登录/注册） 产品展示 购物车管理 订单处理 用户资料管理 主要画面 登录/注册界面 首页（产品列表） 产品详情页 购物车页面 结账页面 用户资料页 类、字段和方法设计
+用户认证（登录/注册）  产品展示 购物车管理 订单处理 用户资料管理 主要画面 登录/注册界面 首页（产品列表） 产品详情页 购物车页面 结账页面 用户资料页 类、字段和方法设计
 
 User 类
 字段： String username String password String email String address 方法： void login(String username, String password) void register(String username, String password, String email, String address) void updateProfile(String email, String address)

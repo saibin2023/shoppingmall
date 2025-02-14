@@ -92,25 +92,3 @@ List<Order> getUserOrders(User user)
 测试：测试每个功能，确保用户体验流畅。
 部署：将应用部署到生产环境，并进行上线运行测试。
 
-└── src
-    ├── main
-    │   ├── java
-    │   │   └── com
-    │   │       └── example
-    │   │           ├── controller
-    │   │           │   └── AuthController.java
-    │   │           ├── model
-    │   │           │   └── User.java
-    │   │           ├── repository
-    │   │           │   └── UserRepository.java
-    │   │           ├── service
-    │   │           │   └── UserService.java
-    │   │           └── dto
-    │   │               └── UserDto.java
-    │   └── resources
-    │       └── application.properties
-    └── test
-        └── java
-            └── com
-                └── example
-                    └── AuthControllerTest.java

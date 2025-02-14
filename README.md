@@ -27,7 +27,17 @@ User 类
 字段： String username String password String email String address 方法： void login(String username, String password) void register(String username, String password, String email, String address) void updateProfile(String email, String address)
 
 Product 类
-字段： String productId String name String description double price String category 方法： List getAllProducts() Product getProductDetails(String productId) 根据现有的项目结构，连接到数据库和API的步骤：
+字段： 
+String productId 
+String name 
+String description 
+double price 
+String category 
+方法： 
+List getAllProducts() 
+Product getProductDetails(String productId) 
+
+根据现有的项目结构，连接到数据库和API的步骤：
 
 API配置：
 
@@ -40,10 +50,24 @@ API配置：
 services/api.js services/product.service.js README.zh_CN.md
 
 Cart 类
-字段： List products User user 方法： void addProductToCart(Product product) void removeProductFromCart(Product product) double calculateTotalPrice() 这个 Cart 类实现了添加、移除、增加和减少购物车商品，以及清空购物车的功能，并且会自动更新总商品数、总价格和总折扣。
+字段： 
+List products User user 
+方法： 
+void addProductToCart(Product product) 
+void removeProductFromCart(Product product) 
+double calculateTotalPrice() 
+这个 Cart 类实现了添加、移除、增加和减少购物车商品，以及清空购物车的功能，并且会自动更新总商品数、总价格和总折扣。
 
 Order 类
-字段： String orderId User user List products double totalPrice String status 方法： void placeOrder(User user, List products) List getUserOrders(User user)
+字段： 
+String orderId 
+User user 
+List products 
+double totalPrice 
+String status 
+方法： 
+void placeOrder(User user, List products) 
+List getUserOrders(User user)
 
 后端API端点
 /login /register /products /product/{id} /cart/add /cart/remove /orders /order/{id} 

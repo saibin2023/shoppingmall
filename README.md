@@ -120,6 +120,7 @@ Outline the URL structure and HTTP methods for each endpoint:
 /order/{id}: GET
 Step 2: Implement API endpoints
 
+DTO类可以用于在控制器和服务层之间传递数据
 
 # 实施步骤
 定义需求：明确应用的功能和用户界面。

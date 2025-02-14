@@ -85,10 +85,47 @@ List<Order> getUserOrders(User user)
 /cart/remove
 /orders
 /order/{id}
+Step 1: Define the API contract
+Identify the request and response formats for each endpoint:
+
+/login:
+Request: { "username": "string", "password": "string" }
+Response: { "token": "string" }
+/register:
+Request: { "name": "string", "email": "string", "password": "string" }
+Response: { "id": "long", "name": "string", "email": "string" }
+/products:
+Response: [ { "id": "long", "name": "string", "price": "double", "description": "string" } ]
+/product/{id}:
+Response: { "id": "long", "name": "string", "price": "double", "description": "string" }
+/cart/add:
+Request: { "productId": "long", "quantity": "int" }
+Response: { "id": "long", "productId": "long", "quantity": "int" }
+/cart/remove:
+Request: { "productId": "long" }
+Response: { "id": "long", "productId": "long", "quantity": "int" }
+/orders:
+Response: [ { "id": "long", "userId": "long", "items": [ { "productId": "long", "quantity": "int" } ], "total": "double" } ]
+/order/{id}:
+Response: { "id": "long", "userId": "long", "items": [ { "productId": "long", "quantity": "int" } ], "total": "double" }
+Outline the URL structure and HTTP methods for each endpoint:
+
+/login: POST
+/register: POST
+/products: GET
+/product/{id}: GET
+/cart/add: POST
+/cart/remove: POST
+/orders: GET
+/order/{id}: GET
+Step 2: Implement API endpoints
+
+
 # 实施步骤
 定义需求：明确应用的功能和用户界面。
 设计架构和组件：创建类图并定义字段和方法。
 实现功能：基于定义的需求和架构编写代码。
 测试：测试每个功能，确保用户体验流畅。
 部署：将应用部署到生产环境，并进行上线运行测试。
+
 

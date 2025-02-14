@@ -40,7 +40,6 @@ shoppingmall
 ## 类、字段和方法设计
 
 ### **User 类**
-```java
 class User {
     // 字段
     String username;
